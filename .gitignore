@@ -1,0 +1,46 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database and user uploads
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Generated / installed
+staticfiles/
+node_modules/
+.dist/
+
+# Old duplicate copy of the project inside the settings package (unused,
+# contains hardcoded credentials). Only settings/urls/wsgi/asgi/__init__ are real.
+/assurancedocsbackend/*
+!/assurancedocsbackend/__init__.py
+!/assurancedocsbackend/settings.py
+!/assurancedocsbackend/urls.py
+!/assurancedocsbackend/wsgi.py
+!/assurancedocsbackend/asgi.py
+
+# Certificate datasets & training outputs (contain real people's personal data)
+verification/AIServices/certificate_verification/datasets/
+verification/AIServices/certificate_verification/training/runs/
+verification/AIServices/datasets/
+
+# Logs
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
